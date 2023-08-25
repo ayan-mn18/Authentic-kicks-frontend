@@ -1,0 +1,10 @@
+:root {
+    --main-background-color: #000000;
+    --main-text-color: #ffffff;
+    --main-highlight-color: linear-gradient(132deg, #FF9898 0%, #8054FF 100%);
+    --secondary-background-color: #18181C;
+    --secondary-text-color: #9E9E9E;
+    --bigger-container-highlight-color: linear-gradient(175deg, #FF9898 0%, #8054FF 100%);
+    --max-container-width: 1440px;
+    --scrollbar-color: #8a6be6;
+}  

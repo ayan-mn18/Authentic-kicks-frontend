@@ -1,0 +1,27 @@
+/* GetStartedButton styles */
+.get-started-button {
+    /* background-color: transparent; */
+    color: var(--main-text-color);
+    border: none;
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 1.2rem; /* Increase font size for larger button */
+    font-weight: 400; /* Use font-weight: 400 as requested */
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+
+    /* Hover animation */
+.get-started-button:hover {
+    transform: translateY(-3px); /* Adjust as needed */
+  }
+  
+  /* Highlighted button styles */
+  .get-started-button.highlighted {
+    background: var(--main-highlight-color);
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+  

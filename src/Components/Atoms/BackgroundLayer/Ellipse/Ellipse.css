@@ -1,0 +1,33 @@
+.ellipse_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+  }
+  
+  .ellipse_container .Ellipse {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .big {
+    top: -150px;
+    left: -700px;
+    scale: 0.35;
+  }
+
+  .small {
+    top: -500px;
+    left: -200px;
+    scale: 0.1;
+  }
+
+  .mid {
+    top: -250px;
+    right: -600px;
+    scale: 0.2;
+  }

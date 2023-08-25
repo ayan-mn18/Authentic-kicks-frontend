@@ -1,13 +1,17 @@
+/* Import your custom variables */
+@import './variables.css';
+
+/* Apply styles to the entire page */
 body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 100vw; /* Use viewport width to match the full screen width */
+  max-width: none; /* Remove the max-width restriction */
+  margin: 0; /* Remove margin to avoid horizontal scroll */
+  padding: 0;
 }
