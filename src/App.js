@@ -10,11 +10,10 @@ function App() {
       <header className="header">
         <Navbar />
       </header>
-      <main>
+      <main className='main'>
         <section className="hero">
           <div className="container">
             <HeroHeading />
-            {/* Hero content */}
           </div>
         </section>
         {/* Other sections */}

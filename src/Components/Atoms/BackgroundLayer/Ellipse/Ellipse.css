@@ -15,19 +15,19 @@
   }
 
   .big {
-    top: -150px;
+    top: -100px;
     left: -700px;
     scale: 0.35;
   }
 
   .small {
-    top: -500px;
+    top: -400px;
     left: -200px;
     scale: 0.1;
   }
 
   .mid {
-    top: -250px;
+    top: -200px;
     right: -600px;
     scale: 0.2;
   }
