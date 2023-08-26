@@ -2,7 +2,7 @@ import React from 'react';
 import Ellipse from '../../../../assets/Ellipse.svg';
 import './Ellipse.css';
 
-function Ellipse_mid() {
+function EllipseMid() {
     return (
         <div className='ellipse_container mid' >
             <img className='Ellipse' src={Ellipse} alt="EllipseMid" />
@@ -10,4 +10,4 @@ function Ellipse_mid() {
     )
 }
 
-export default Ellipse_mid;
+export default EllipseMid;

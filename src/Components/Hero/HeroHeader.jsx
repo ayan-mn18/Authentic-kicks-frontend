@@ -3,9 +3,9 @@ import React from 'react';
 import './HeroHeading.css'; // Create this file for your custom HeroHeading styles
 import GetStartedButton from '../Atoms/Get Started/GetStartedButton';
 import HeroImage from '../Atoms/HeroImage/HeroImage';
-import Ellipse_big from '../Atoms/BackgroundLayer/Ellipse/Ellipse_big';
-import Ellipse_small from '../Atoms/BackgroundLayer/Ellipse/Ellipse_small';
-import Ellipse_mid from '../Atoms/BackgroundLayer/Ellipse/Ellipse_mid';
+import EllipseBig from '../Atoms/BackgroundLayer/Ellipse/EllipseBig';
+import EllipseSmall from '../Atoms/BackgroundLayer/Ellipse/EllipseSmall';
+import EllipseMid from '../Atoms/BackgroundLayer/Ellipse/EllipseMid';
 
 function HeroHeading() {
     return (
@@ -19,9 +19,9 @@ function HeroHeading() {
             </div>
             <GetStartedButton />
             <HeroImage />
-            <Ellipse_big />
-            <Ellipse_small />
-            <Ellipse_mid />
+            <EllipseBig />
+            <EllipseSmall />
+            <EllipseMid />
         </div>
     );
 }

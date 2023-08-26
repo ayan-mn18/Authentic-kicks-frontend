@@ -2,7 +2,7 @@ import React from 'react';
 import Ellipse from '../../../../assets/Ellipse.svg';
 import './Ellipse.css';
 
-function Ellipse_big() {
+function EllipseBig() {
     return (
         <div className='ellipse_container big' >
             <img className='Ellipse' src={Ellipse} alt="EllipseBig" />
@@ -10,4 +10,4 @@ function Ellipse_big() {
     )
 }
 
-export default Ellipse_big
+export default EllipseBig
