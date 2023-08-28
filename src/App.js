@@ -4,6 +4,7 @@ import './variables.css';
 import Navbar from './Components/Navbar/Navbar';
 import HeroHeading from './Components/Hero/HeroHeader';
 import Features from './Components/Features/Features';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
         <section className="hero">
           <div className="container">
             <Features />
+          </div>
+        </section>
+        <section className="hero">
+          <div className="container">
+            <Testimonials />
           </div>
         </section>
         {/* Other sections */}

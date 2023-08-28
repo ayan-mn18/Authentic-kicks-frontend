@@ -1,0 +1,32 @@
+/* TestimonialSlider styles */
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+  }
+  
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 50px 5px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dot.active {
+    background-color: var(--main-text-color);
+  }
+  

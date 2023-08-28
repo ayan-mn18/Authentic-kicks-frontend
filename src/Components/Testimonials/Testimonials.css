@@ -1,0 +1,17 @@
+/* Testimonials styles */
+.testimonials {
+    padding: 80px 0; /* Add padding as needed */
+    text-align: center;
+  }
+  
+  .testimonials-heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    color: var(--main-text-color);
+    margin-bottom: 40px; /* Add margin as needed */
+  }
+  
+  /* Styling for testimonial card slider */
+  /* Add your styles for the testimonial card slider here */
+  
