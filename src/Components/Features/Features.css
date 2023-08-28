@@ -1,0 +1,11 @@
+.features {
+    max-width:  calc(var(--max-container-width) - 200px );
+    margin: 100px 0px;
+}
+
+.Feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:stretch;
+}
