@@ -1,0 +1,43 @@
+/* PricingHeader styles */
+.pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Adjust as needed */
+  }
+  
+  .pricing-heading {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    color: var(--main-text-color);
+  }
+  
+  .pricing-buttons {
+    display: flex;
+    align-items: center;
+    background: var(--box-background-color);
+    border-radius: 155px;
+  }
+  
+  .pricing-button {
+    color: var(--secondary-text-color);
+    background: var(--box-background-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 155px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-style: none;
+    padding: 10px 35px;
+    font-family: "poppins";
+  }
+  
+  .pricing-button.active {
+    background: var(--main-highlight-color);
+    color: var(--main-text-color);
+  }
+  

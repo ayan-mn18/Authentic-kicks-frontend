@@ -1,0 +1,129 @@
+/* PricingBox styles */
+.pricing-box {
+    width: 350px;
+    height: 495px;
+    border-radius: 20px;
+    background-color: var(--box-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Add the box shadow */
+    transition: 0.2s ease-in-out;
+  }
+
+  .pricing-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: var(--icon-box-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-75%);
+    scale: 1.2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-icon img {
+    position: absolute;
+    transform: translate(5%, 5%);
+    border-radius: 50%;
+  }
+  
+  .pricing-header {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--main-text-color);
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider-color);
+    margin: 10px 0;
+  }
+  
+  .pricing-details {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+  }
+  
+  .detail-icon {
+    margin-right: 10px;
+    width: 29px;
+    height: 29px;
+    background: var(--icon-box-background-color);
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .detail-icon img{
+    position: absolute;
+    transform: translate(100%, 100%);
+  }
+  
+  .amount-and-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .amount {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .amount-value {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--main-text-color);
+  }
+  
+  .duration {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--secondary-text-color);
+  }
+  
+  .signup-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background: var(--icon-box-background-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    color: var(--main-text-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: "poppins";
+
+  }
+  
+  .pricing-box:hover .signup-button{
+    background: var(--main-highlight-color);
+  }

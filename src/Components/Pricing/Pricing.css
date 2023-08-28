@@ -1,0 +1,12 @@
+/* Pricing styles */
+.pricing-section {
+    padding: 80px 0; /* Adjust as needed */
+    background-color: var(--background-color);
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* Other styles for .container, etc. */
+  
