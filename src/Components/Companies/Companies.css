@@ -1,0 +1,108 @@
+/* CompaniesSection styles */
+.companies-section {
+    background: var(--box-background-color);
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+  }
+  
+  .section-heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    max-width: 700px;
+    color: var(--main-text-color);
+    text-align: center;
+  }
+  
+  .company-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 300px;
+  }
+  
+  .company-card {
+    width: 160px;
+    height: 92px;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0px 20px;
+    cursor: pointer;
+  }
+
+  .company-logo {
+    scale: 1.25;
+  }
+  
+  .free-trial-card {
+    background: var(--bigger-container-highlight-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 40px 100px;
+    position: absolute;
+    bottom: -250px;
+    border-radius: 50px;
+    width: 1110px;
+    height: 425px;
+    overflow: hidden;
+  }
+  
+  .free-trial-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      }
+  
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--main-text-color);
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+    color: var(--main-text-color);
+    max-width: 500px;
+  }
+  
+  .start-trial-button {
+    background: #000000;
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 12px 28px;
+    margin-top: 20px;
+    width: 200px;
+    height: 44px;
+    font-family: "poppins";
+    border-style: none;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .world-map {
+    flex: 1;
+    text-align: right;
+    transform: translate(10%, -10%);
+    scale: 1.1;
+  }
+  
+  .world-map img {
+    max-width: 100%;
+    height: auto;
+  }
+  

@@ -6,6 +6,7 @@ import HeroHeading from './Components/Hero/HeroHeader';
 import Features from './Components/Features/Features';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Pricing from './Components/Pricing/Pricing';
+import Companies from './Components/Companies/Companies';
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
         <section className="hero">
           <div className="container">
             <Pricing />
+          </div>
+        </section>
+        <section className="hero">
+          <div className="container">
+            <Companies />
           </div>
         </section>
         {/* Other sections */}
