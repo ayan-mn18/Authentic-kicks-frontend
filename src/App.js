@@ -8,6 +8,7 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import Pricing from './Components/Pricing/Pricing';
 import Companies from './Components/Companies/Companies';
 import TryItOut from './Components/TryItOut/TryItOut';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
       </main>
       <footer className="footer">
         <div className="container">
-          {/* Footer content */}
+          <Footer />
         </div>
       </footer>
     </div>
