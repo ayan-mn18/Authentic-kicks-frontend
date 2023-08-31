@@ -7,6 +7,7 @@ import Features from './Components/Features/Features';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Pricing from './Components/Pricing/Pricing';
 import Companies from './Components/Companies/Companies';
+import TryItOut from './Components/TryItOut/TryItOut';
 
 function App() {
   return (
@@ -38,6 +39,11 @@ function App() {
         <section className="hero">
           <div className="container">
             <Companies />
+          </div>
+        </section>
+        <section className="hero">
+          <div className="container">
+            <TryItOut />
           </div>
         </section>
         {/* Other sections */}

@@ -1,0 +1,170 @@
+/* TryItOutSection styles */
+.try-it-out-section {
+    margin-top: 200px;
+  }
+  
+  .container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  
+  .try-it-out-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .try-it-out-globe {
+    flex: 1;
+  }
+
+  .ellipse {   
+    position: absolute;
+  }
+
+  .ellipse2 {
+    bottom: 10%;
+    right: 60%;
+  }
+
+  .ellipse1 {
+    top: 25%;
+  }
+  
+  .try-it-out-globe img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .try-it-out-form {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .form-header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    color: var(--main-highlight-color);
+  }
+
+  .form-header .form-sub-header {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 80px;
+    color: var(--secondary-text-color);
+  }
+  
+  .form-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--secondary-text-color);
+    margin-top: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  input[type="text"]
+   {
+    font-family: "poppins";
+    width: 408px;
+    padding: 12px 28px;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--box-background-color);
+    border-style: none ;
+    color: var(--main-text-color);
+  }
+
+  input[type="file"] {
+    font-family: "poppins";
+    width: 408px;
+    padding: 12px 28px;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--box-background-color);
+    border-style: none ;
+    color: var(--main-text-color);
+    
+  }
+
+/* Custom styling for input[type="file"] */
+.custom-file-input {
+    display: none;
+  }
+  
+  .custom-file-label {
+    width: 408px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    background: var(--box-background-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .custom-file-label:hover {
+    background: var(--secondary-text-color);
+    color: var(--main-text-color);
+  }
+  
+  input[type="file"]:focus + .custom-file-label {
+    box-shadow: 0 0 0 2px var(--main-highlight-color);
+  }
+  
+  /* Style for the selected file name label */
+
+  .selected-file {
+    display: flex;
+    gap: 25px;
+  }
+.selected-file-name {
+    font-size: 24px;
+    color: var(--main-text-color);
+    margin-top: 10px;
+    padding: 12px 28px;
+    padding-left: 2px;
+  }
+
+  .selected-file-cancel {
+    align-self: center;
+    font-size: 18px;
+    font-family: "poppins";
+    padding: 12px 28px;
+    border-radius: 5px;
+    background: var(--main-highlight-color);
+    cursor: pointer;
+  }
+
+
+  
+  ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+  }
+  
+  .try-it-out-button {
+    padding: 12px 28px;
+    border-radius: 5px;
+    background: var(--main-highlight-color);
+    color: var(--main-text-color);
+    width: 143px;
+    height: 44px;
+    margin-top: 20px;
+    font-family: "poppins";
+    border-style: none ;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
