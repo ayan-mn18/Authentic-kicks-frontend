@@ -1,6 +1,7 @@
 /* CompaniesSection styles */
 .companies-section {
     background: var(--box-background-color);
+    width: 100vw;
   }
   
   .container {
