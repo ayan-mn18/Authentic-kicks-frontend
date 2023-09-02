@@ -24,3 +24,8 @@ body {
 .main {
   height: auto;
 }
+
+.footer {
+  max-width: var(--max-container-width);
+  margin: auto;
+}
