@@ -3,6 +3,7 @@ import './TryItOut.css'; // Create this file for your custom TryItOutSection sty
 import globeImage from '../../assets/globe.png';
 import ellipse1 from '../../assets/ellipse-1-try-it-out.png';
 import ellipse2 from '../../assets/ellipse-2-try-it-out.png';
+import loadingImage from '../../assets/loading.gif';
 import { createCombinations } from '../../api/stage2';
 
 function TryItOut() {
@@ -12,6 +13,8 @@ function TryItOut() {
     const [projectName, setProjectName] = useState('');
     const [zipFile, setZipFile] = useState(null);
     const [selectedFileName, setSelectedFileName] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const [response, setResponse] = useState('');
 
     const removeFile = () => {
         setSelectedFileName('');
@@ -39,16 +42,20 @@ function TryItOut() {
         formData.append('projectName', projectName);
         formData.append('file', zipFile);
 
-        console.log(formData.get('file'));
+        setIsLoading(true);
 
         // Make the POST request
         createCombinations(formData)
             .then((response) => {
                 // Handle the response here if needed
-                console.log(response.data);
+                setResponse(response.data);
             })
             .catch((error) => {
                 console.error('Error making POST request:', error);
+            })
+            .finally(() => {
+                // Stop loading
+                setIsLoading(false);
             });
     };
 
@@ -61,7 +68,17 @@ function TryItOut() {
                     <img src={ellipse2} className='ellipse ellipse2' alt="ellipse2" />
                     <img src={globeImage} alt="Globe" />
                 </div>
-                <div className="try-it-out-form">
+                {response && (
+                    <div className='selected-file'>
+                        <p className="selected-file-name">{response}</p>
+                    </div>
+                )}
+                <div className="try-it-out-form" style={{ filter: isLoading ? 'blur(1px)' : 'none', display: response ? 'none' : 'block' }}>
+                    {isLoading && (
+                        <div className="loading-overlay">
+                            <img src={loadingImage} alt="Loading" />
+                        </div>
+                    )}
                     <h2 className="form-header">Try it out! <span className="form-sub-header">(for free) </span> </h2>
                     <p className="form-description">
                         Get started with our amazing platform by entering your
