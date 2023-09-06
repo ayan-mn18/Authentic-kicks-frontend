@@ -67,12 +67,12 @@ function TryItOut() {
                     <img src={ellipse1} className='ellipse ellipse1' alt="ellipse1" />
                     <img src={ellipse2} className='ellipse ellipse2' alt="ellipse2" />
                     <img src={globeImage} alt="Globe" />
+                    {response && (
+                        <div className='response-container'>
+                            <p className="response">{response}</p>
+                        </div>
+                    )}
                 </div>
-                {response && (
-                    <div className='selected-file'>
-                        <p className="selected-file-name">{response}</p>
-                    </div>
-                )}
                 <div className="try-it-out-form" style={{ filter: isLoading ? 'blur(1px)' : 'none', display: response ? 'none' : 'block' }}>
                     {isLoading && (
                         <div className="loading-overlay">

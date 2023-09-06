@@ -130,7 +130,8 @@
     display: flex;
     gap: 25px;
   }
-.selected-file-name {
+  
+  .selected-file-name {
     font-size: 24px;
     color: var(--main-text-color);
     margin-top: 10px;
@@ -146,6 +147,20 @@
     border-radius: 5px;
     background: var(--main-highlight-color);
     cursor: pointer;
+  }
+
+  .response-container {
+    display: flex;
+    gap: 25px;
+    transform: translateY(80px);
+  }
+  
+  .response {
+    font-size: 30px;
+    color: var(--main-text-color);
+    margin-top: 10px;
+    padding: 12px 28px;
+    padding-left: 2px;
   }
 
 
