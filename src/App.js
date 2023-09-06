@@ -10,44 +10,30 @@ import Companies from './Components/Companies/Companies';
 import TryItOut from './Components/TryItOut/TryItOut';
 import Footer from './Components/Footer/Footer';
 
+const sections = [
+  { component: HeroHeading, className: 'hero' },
+  { component: Features, className: 'hero' },
+  { component: Testimonials, className: 'hero' },
+  { component: Pricing, className: 'hero' },
+  { component: Companies, className: 'hero' },
+  { component: TryItOut, className: 'hero' },
+  // Add more sections as needed
+];
+
 function App() {
   return (
     <div className="App">
       <header className="header">
         <Navbar />
       </header>
-      <main className='main'>
-        <section className="hero">
-          <div className="container">
-            <HeroHeading />
-          </div>
-        </section>
-        <section className="hero">
-          <div className="container">
-            <Features />
-          </div>
-        </section>
-        <section className="hero">
-          <div className="container">
-            <Testimonials />
-          </div>
-        </section>
-        <section className="hero">
-          <div className="container">
-            <Pricing />
-          </div>
-        </section>
-        <section className="hero">
-          <div className="container">
-            <Companies />
-          </div>
-        </section>
-        <section className="hero">
-          <div className="container">
-            <TryItOut />
-          </div>
-        </section>
-        {/* Other sections */}
+      <main className="main">
+        {sections.map((section, index) => (
+          <section key={index} className={section.className}>
+            <div className="container">
+              <section.component />
+            </div>
+          </section>
+        ))}
       </main>
       <footer className="footer">
         <Footer />
